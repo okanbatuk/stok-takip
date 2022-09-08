@@ -8,7 +8,7 @@ namespace StokTakip
         public MainForm()
         {
             InitializeComponent();
-            sabitDegiskenler.vtsYolu = @"Data Source=2.56.152.3\MSSQLSERVER2014;Initial Catalog=webtasar_StokTakipDB;Persist Security Info=True;User ID=test2022;Password=M8u3s0!";
+            sabitDegiskenler.vtsYolu = @"a";
             con.ConnectionString = sabitDegiskenler.vtsYolu;
         }
 
