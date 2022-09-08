@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="myDataSet" targetNamespace="http://tempuri.org/myDataSet.xsd" xmlns:mstns="http://tempuri.org/myDataSet.xsd" xmlns="http://tempuri.org/myDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="con (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StokTakip.Properties.Settings.GlobalReference.Default.con" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="webtasar_StokTakipDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="webtasar_StokTakipDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StokTakip.Properties.Settings.GlobalReference.Default.webtasar_StokTakipDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="myDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="myDataSet" msprop:Generator_UserDSName="myDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblBirim" msprop:Generator_TableClassName="tblBirimDataTable" msprop:Generator_TableVarName="tabletblBirim" msprop:Generator_RowChangedName="tblBirimRowChanged" msprop:Generator_TablePropName="tblBirim" msprop:Generator_RowDeletingName="tblBirimRowDeleting" msprop:Generator_RowChangingName="tblBirimRowChanging" msprop:Generator_RowEvHandlerName="tblBirimRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBirimRowDeleted" msprop:Generator_RowClassName="tblBirimRow" msprop:Generator_UserTableName="tblBirim" msprop:Generator_RowEvArgName="tblBirimRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BirimID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBirimID" msprop:Generator_ColumnPropNameInRow="BirimID" msprop:Generator_ColumnPropNameInTable="BirimIDColumn" msprop:Generator_UserColumnName="BirimID" type="xs:int" />
+              <xs:element name="BirimAdi" msprop:Generator_ColumnVarNameInTable="columnBirimAdi" msprop:Generator_ColumnPropNameInRow="BirimAdi" msprop:Generator_ColumnPropNameInTable="BirimAdiColumn" msprop:Generator_UserColumnName="BirimAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblStokHareket" msprop:Generator_TableClassName="tblStokHareketDataTable" msprop:Generator_TableVarName="tabletblStokHareket" msprop:Generator_RowChangedName="tblStokHareketRowChanged" msprop:Generator_TablePropName="tblStokHareket" msprop:Generator_RowDeletingName="tblStokHareketRowDeleting" msprop:Generator_RowChangingName="tblStokHareketRowChanging" msprop:Generator_RowEvHandlerName="tblStokHareketRowChangeEventHandler" msprop:Generator_RowDeletedName="tblStokHareketRowDeleted" msprop:Generator_RowClassName="tblStokHareketRow" msprop:Generator_UserTableName="tblStokHareket" msprop:Generator_RowEvArgName="tblStokHareketRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HareketID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHareketID" msprop:Generator_ColumnPropNameInRow="HareketID" msprop:Generator_ColumnPropNameInTable="HareketIDColumn" msprop:Generator_UserColumnName="HareketID" type="xs:int" />
+              <xs:element name="FaturaID" msprop:Generator_ColumnVarNameInTable="columnFaturaID" msprop:Generator_ColumnPropNameInRow="FaturaID" msprop:Generator_ColumnPropNameInTable="FaturaIDColumn" msprop:Generator_UserColumnName="FaturaID" type="xs:int" minOccurs="0" />
+              <xs:element name="StokID" msprop:Generator_ColumnVarNameInTable="columnStokID" msprop:Generator_ColumnPropNameInRow="StokID" msprop:Generator_ColumnPropNameInTable="StokIDColumn" msprop:Generator_UserColumnName="StokID" type="xs:int" minOccurs="0" />
+              <xs:element name="BirimID" msprop:Generator_ColumnVarNameInTable="columnBirimID" msprop:Generator_ColumnPropNameInRow="BirimID" msprop:Generator_ColumnPropNameInTable="BirimIDColumn" msprop:Generator_UserColumnName="BirimID" type="xs:int" minOccurs="0" />
+              <xs:element name="StokKod" msprop:Generator_ColumnVarNameInTable="columnStokKod" msprop:Generator_ColumnPropNameInRow="StokKod" msprop:Generator_ColumnPropNameInTable="StokKodColumn" msprop:Generator_UserColumnName="StokKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Barkod" msprop:Generator_ColumnVarNameInTable="columnBarkod" msprop:Generator_ColumnPropNameInRow="Barkod" msprop:Generator_ColumnPropNameInTable="BarkodColumn" msprop:Generator_UserColumnName="Barkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fiyat" msprop:Generator_ColumnVarNameInTable="columnFiyat" msprop:Generator_ColumnPropNameInRow="Fiyat" msprop:Generator_ColumnPropNameInTable="FiyatColumn" msprop:Generator_UserColumnName="Fiyat" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Tutar" msprop:Generator_ColumnVarNameInTable="columnTutar" msprop:Generator_ColumnPropNameInRow="Tutar" msprop:Generator_ColumnPropNameInTable="TutarColumn" msprop:Generator_UserColumnName="Tutar" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="KdvOrani" msprop:Generator_ColumnVarNameInTable="columnKdvOrani" msprop:Generator_ColumnPropNameInRow="KdvOrani" msprop:Generator_ColumnPropNameInTable="KdvOraniColumn" msprop:Generator_UserColumnName="KdvOrani" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Miktar" msprop:Generator_ColumnVarNameInTable="columnMiktar" msprop:Generator_ColumnPropNameInRow="Miktar" msprop:Generator_ColumnPropNameInTable="MiktarColumn" msprop:Generator_UserColumnName="Miktar" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="KdvTutari" msprop:Generator_ColumnVarNameInTable="columnKdvTutari" msprop:Generator_ColumnPropNameInRow="KdvTutari" msprop:Generator_ColumnPropNameInTable="KdvTutariColumn" msprop:Generator_UserColumnName="KdvTutari" type="xs:decimal" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblCariHesaplar" msprop:Generator_TableClassName="tblCariHesaplarDataTable" msprop:Generator_TableVarName="tabletblCariHesaplar" msprop:Generator_RowChangedName="tblCariHesaplarRowChanged" msprop:Generator_TablePropName="tblCariHesaplar" msprop:Generator_RowDeletingName="tblCariHesaplarRowDeleting" msprop:Generator_RowChangingName="tblCariHesaplarRowChanging" msprop:Generator_RowEvHandlerName="tblCariHesaplarRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCariHesaplarRowDeleted" msprop:Generator_RowClassName="tblCariHesaplarRow" msprop:Generator_UserTableName="tblCariHesaplar" msprop:Generator_RowEvArgName="tblCariHesaplarRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CariID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCariID" msprop:Generator_ColumnPropNameInRow="CariID" msprop:Generator_ColumnPropNameInTable="CariIDColumn" msprop:Generator_UserColumnName="CariID" type="xs:int" />
+              <xs:element name="Unvan" msprop:Generator_ColumnVarNameInTable="columnUnvan" msprop:Generator_ColumnPropNameInRow="Unvan" msprop:Generator_ColumnPropNameInTable="UnvanColumn" msprop:Generator_UserColumnName="Unvan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VergiNo" msprop:Generator_ColumnVarNameInTable="columnVergiNo" msprop:Generator_ColumnPropNameInRow="VergiNo" msprop:Generator_ColumnPropNameInTable="VergiNoColumn" msprop:Generator_UserColumnName="VergiNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VergiDairesi" msprop:Generator_ColumnVarNameInTable="columnVergiDairesi" msprop:Generator_ColumnPropNameInRow="VergiDairesi" msprop:Generator_ColumnPropNameInTable="VergiDairesiColumn" msprop:Generator_UserColumnName="VergiDairesi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefon" msprop:Generator_ColumnVarNameInTable="columnTelefon" msprop:Generator_ColumnPropNameInRow="Telefon" msprop:Generator_ColumnPropNameInTable="TelefonColumn" msprop:Generator_UserColumnName="Telefon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mail" msprop:Generator_ColumnVarNameInTable="columnMail" msprop:Generator_ColumnPropNameInRow="Mail" msprop:Generator_ColumnPropNameInTable="MailColumn" msprop:Generator_UserColumnName="Mail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblFatura" msprop:Generator_TableClassName="tblFaturaDataTable" msprop:Generator_TableVarName="tabletblFatura" msprop:Generator_RowChangedName="tblFaturaRowChanged" msprop:Generator_TablePropName="tblFatura" msprop:Generator_RowDeletingName="tblFaturaRowDeleting" msprop:Generator_RowChangingName="tblFaturaRowChanging" msprop:Generator_RowEvHandlerName="tblFaturaRowChangeEventHandler" msprop:Generator_RowDeletedName="tblFaturaRowDeleted" msprop:Generator_RowClassName="tblFaturaRow" msprop:Generator_UserTableName="tblFatura" msprop:Generator_RowEvArgName="tblFaturaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FaturaID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnFaturaID" msprop:Generator_ColumnPropNameInRow="FaturaID" msprop:Generator_ColumnPropNameInTable="FaturaIDColumn" msprop:Generator_UserColumnName="FaturaID" type="xs:int" />
+              <xs:element name="CariID" msprop:Generator_ColumnVarNameInTable="columnCariID" msprop:Generator_ColumnPropNameInRow="CariID" msprop:Generator_ColumnPropNameInTable="CariIDColumn" msprop:Generator_UserColumnName="CariID" type="xs:int" minOccurs="0" />
+              <xs:element name="FaturaTarihi" msprop:Generator_ColumnVarNameInTable="columnFaturaTarihi" msprop:Generator_ColumnPropNameInRow="FaturaTarihi" msprop:Generator_ColumnPropNameInTable="FaturaTarihiColumn" msprop:Generator_UserColumnName="FaturaTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FaturaNo" msprop:Generator_ColumnVarNameInTable="columnFaturaNo" msprop:Generator_ColumnPropNameInRow="FaturaNo" msprop:Generator_ColumnPropNameInTable="FaturaNoColumn" msprop:Generator_UserColumnName="FaturaNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AraToplam" msprop:Generator_ColumnVarNameInTable="columnAraToplam" msprop:Generator_ColumnPropNameInRow="AraToplam" msprop:Generator_ColumnPropNameInTable="AraToplamColumn" msprop:Generator_UserColumnName="AraToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GenelToplam" msprop:Generator_ColumnVarNameInTable="columnGenelToplam" msprop:Generator_ColumnPropNameInRow="GenelToplam" msprop:Generator_ColumnPropNameInTable="GenelToplamColumn" msprop:Generator_UserColumnName="GenelToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvToplam" msprop:Generator_ColumnVarNameInTable="columnKdvToplam" msprop:Generator_ColumnPropNameInRow="KdvToplam" msprop:Generator_ColumnPropNameInTable="KdvToplamColumn" msprop:Generator_UserColumnName="KdvToplam" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblKullanici" msprop:Generator_TableClassName="tblKullaniciDataTable" msprop:Generator_TableVarName="tabletblKullanici" msprop:Generator_RowChangedName="tblKullaniciRowChanged" msprop:Generator_TablePropName="tblKullanici" msprop:Generator_RowDeletingName="tblKullaniciRowDeleting" msprop:Generator_RowChangingName="tblKullaniciRowChanging" msprop:Generator_RowEvHandlerName="tblKullaniciRowChangeEventHandler" msprop:Generator_RowDeletedName="tblKullaniciRowDeleted" msprop:Generator_RowClassName="tblKullaniciRow" msprop:Generator_UserTableName="tblKullanici" msprop:Generator_RowEvArgName="tblKullaniciRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KullaniciID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnKullaniciID" msprop:Generator_ColumnPropNameInRow="KullaniciID" msprop:Generator_ColumnPropNameInTable="KullaniciIDColumn" msprop:Generator_UserColumnName="KullaniciID" type="xs:int" />
+              <xs:element name="KullaniciAdi" msprop:Generator_ColumnVarNameInTable="columnKullaniciAdi" msprop:Generator_ColumnPropNameInRow="KullaniciAdi" msprop:Generator_ColumnPropNameInTable="KullaniciAdiColumn" msprop:Generator_UserColumnName="KullaniciAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sifre" msprop:Generator_ColumnVarNameInTable="columnSifre" msprop:Generator_ColumnPropNameInRow="Sifre" msprop:Generator_ColumnPropNameInTable="SifreColumn" msprop:Generator_UserColumnName="Sifre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblStok" msprop:Generator_TableClassName="tblStokDataTable" msprop:Generator_TableVarName="tabletblStok" msprop:Generator_RowChangedName="tblStokRowChanged" msprop:Generator_TablePropName="tblStok" msprop:Generator_RowDeletingName="tblStokRowDeleting" msprop:Generator_RowChangingName="tblStokRowChanging" msprop:Generator_RowEvHandlerName="tblStokRowChangeEventHandler" msprop:Generator_RowDeletedName="tblStokRowDeleted" msprop:Generator_RowClassName="tblStokRow" msprop:Generator_UserTableName="tblStok" msprop:Generator_RowEvArgName="tblStokRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StokID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnStokID" msprop:Generator_ColumnPropNameInRow="StokID" msprop:Generator_ColumnPropNameInTable="StokIDColumn" msprop:Generator_UserColumnName="StokID" type="xs:int" />
+              <xs:element name="BirimID" msprop:Generator_ColumnVarNameInTable="columnBirimID" msprop:Generator_ColumnPropNameInRow="BirimID" msprop:Generator_ColumnPropNameInTable="BirimIDColumn" msprop:Generator_UserColumnName="BirimID" type="xs:int" minOccurs="0" />
+              <xs:element name="Barkod" msprop:Generator_ColumnVarNameInTable="columnBarkod" msprop:Generator_ColumnPropNameInRow="Barkod" msprop:Generator_ColumnPropNameInTable="BarkodColumn" msprop:Generator_UserColumnName="Barkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StokAdi" msprop:Generator_ColumnVarNameInTable="columnStokAdi" msprop:Generator_ColumnPropNameInRow="StokAdi" msprop:Generator_ColumnPropNameInTable="StokAdiColumn" msprop:Generator_UserColumnName="StokAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StokKod" msprop:Generator_ColumnVarNameInTable="columnStokKod" msprop:Generator_ColumnPropNameInRow="StokKod" msprop:Generator_ColumnPropNameInTable="StokKodColumn" msprop:Generator_UserColumnName="StokKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StokFiyat" msprop:Generator_ColumnVarNameInTable="columnStokFiyat" msprop:Generator_ColumnPropNameInRow="StokFiyat" msprop:Generator_ColumnPropNameInTable="StokFiyatColumn" msprop:Generator_UserColumnName="StokFiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StokKdvOrani" msprop:Generator_ColumnVarNameInTable="columnStokKdvOrani" msprop:Generator_ColumnPropNameInRow="StokKdvOrani" msprop:Generator_ColumnPropNameInTable="StokKdvOraniColumn" msprop:Generator_UserColumnName="StokKdvOrani" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Print_Fatura" msprop:Generator_TableClassName="View_Print_FaturaDataTable" msprop:Generator_TableVarName="tableView_Print_Fatura" msprop:Generator_RowChangedName="View_Print_FaturaRowChanged" msprop:Generator_TablePropName="View_Print_Fatura" msprop:Generator_RowDeletingName="View_Print_FaturaRowDeleting" msprop:Generator_RowChangingName="View_Print_FaturaRowChanging" msprop:Generator_RowEvHandlerName="View_Print_FaturaRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Print_FaturaRowDeleted" msprop:Generator_RowClassName="View_Print_FaturaRow" msprop:Generator_UserTableName="View_Print_Fatura" msprop:Generator_RowEvArgName="View_Print_FaturaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FaturaID" msprop:Generator_ColumnVarNameInTable="columnFaturaID" msprop:Generator_ColumnPropNameInRow="FaturaID" msprop:Generator_ColumnPropNameInTable="FaturaIDColumn" msprop:Generator_UserColumnName="FaturaID" type="xs:int" />
+              <xs:element name="Unvan" msprop:Generator_ColumnVarNameInTable="columnUnvan" msprop:Generator_ColumnPropNameInRow="Unvan" msprop:Generator_ColumnPropNameInTable="UnvanColumn" msprop:Generator_UserColumnName="Unvan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FaturaNo" msprop:Generator_ColumnVarNameInTable="columnFaturaNo" msprop:Generator_ColumnPropNameInRow="FaturaNo" msprop:Generator_ColumnPropNameInTable="FaturaNoColumn" msprop:Generator_UserColumnName="FaturaNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FaturaTarihi" msprop:Generator_ColumnVarNameInTable="columnFaturaTarihi" msprop:Generator_ColumnPropNameInRow="FaturaTarihi" msprop:Generator_ColumnPropNameInTable="FaturaTarihiColumn" msprop:Generator_UserColumnName="FaturaTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StokKod" msprop:Generator_ColumnVarNameInTable="columnStokKod" msprop:Generator_ColumnPropNameInRow="StokKod" msprop:Generator_ColumnPropNameInTable="StokKodColumn" msprop:Generator_UserColumnName="StokKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StokAdi" msprop:Generator_ColumnVarNameInTable="columnStokAdi" msprop:Generator_ColumnPropNameInRow="StokAdi" msprop:Generator_ColumnPropNameInTable="StokAdiColumn" msprop:Generator_UserColumnName="StokAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Barkod" msprop:Generator_ColumnVarNameInTable="columnBarkod" msprop:Generator_ColumnPropNameInRow="Barkod" msprop:Generator_ColumnPropNameInTable="BarkodColumn" msprop:Generator_UserColumnName="Barkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Miktar" msprop:Generator_ColumnVarNameInTable="columnMiktar" msprop:Generator_ColumnPropNameInRow="Miktar" msprop:Generator_ColumnPropNameInTable="MiktarColumn" msprop:Generator_UserColumnName="Miktar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BirimAdi" msprop:Generator_ColumnVarNameInTable="columnBirimAdi" msprop:Generator_ColumnPropNameInRow="BirimAdi" msprop:Generator_ColumnPropNameInTable="BirimAdiColumn" msprop:Generator_UserColumnName="BirimAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KdvOrani" msprop:Generator_ColumnVarNameInTable="columnKdvOrani" msprop:Generator_ColumnPropNameInRow="KdvOrani" msprop:Generator_ColumnPropNameInTable="KdvOraniColumn" msprop:Generator_UserColumnName="KdvOrani" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvTutari" msprop:Generator_ColumnVarNameInTable="columnKdvTutari" msprop:Generator_ColumnPropNameInRow="KdvTutari" msprop:Generator_ColumnPropNameInTable="KdvTutariColumn" msprop:Generator_UserColumnName="KdvTutari" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Fiyat" msprop:Generator_ColumnVarNameInTable="columnFiyat" msprop:Generator_ColumnPropNameInRow="Fiyat" msprop:Generator_ColumnPropNameInTable="FiyatColumn" msprop:Generator_UserColumnName="Fiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tutar" msprop:Generator_ColumnVarNameInTable="columnTutar" msprop:Generator_ColumnPropNameInRow="Tutar" msprop:Generator_ColumnPropNameInTable="TutarColumn" msprop:Generator_UserColumnName="Tutar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AraToplam" msprop:Generator_ColumnVarNameInTable="columnAraToplam" msprop:Generator_ColumnPropNameInRow="AraToplam" msprop:Generator_ColumnPropNameInTable="AraToplamColumn" msprop:Generator_UserColumnName="AraToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvToplam" msprop:Generator_ColumnVarNameInTable="columnKdvToplam" msprop:Generator_ColumnPropNameInRow="KdvToplam" msprop:Generator_ColumnPropNameInTable="KdvToplamColumn" msprop:Generator_UserColumnName="KdvToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GenelToplam" msprop:Generator_ColumnVarNameInTable="columnGenelToplam" msprop:Generator_ColumnPropNameInRow="GenelToplam" msprop:Generator_ColumnPropNameInTable="GenelToplamColumn" msprop:Generator_UserColumnName="GenelToplam" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Fatura" msprop:Generator_TableClassName="View_FaturaDataTable" msprop:Generator_TableVarName="tableView_Fatura" msprop:Generator_TablePropName="View_Fatura" msprop:Generator_RowDeletingName="View_FaturaRowDeleting" msprop:Generator_RowChangingName="View_FaturaRowChanging" msprop:Generator_RowEvHandlerName="View_FaturaRowChangeEventHandler" msprop:Generator_RowDeletedName="View_FaturaRowDeleted" msprop:Generator_UserTableName="View_Fatura" msprop:Generator_RowChangedName="View_FaturaRowChanged" msprop:Generator_RowEvArgName="View_FaturaRowChangeEvent" msprop:Generator_RowClassName="View_FaturaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CariID" msprop:Generator_ColumnVarNameInTable="columnCariID" msprop:Generator_ColumnPropNameInRow="CariID" msprop:Generator_ColumnPropNameInTable="CariIDColumn" msprop:Generator_UserColumnName="CariID" type="xs:int" />
+              <xs:element name="Unvan" msprop:Generator_ColumnVarNameInTable="columnUnvan" msprop:Generator_ColumnPropNameInRow="Unvan" msprop:Generator_ColumnPropNameInTable="UnvanColumn" msprop:Generator_UserColumnName="Unvan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VergiNo" msprop:Generator_ColumnVarNameInTable="columnVergiNo" msprop:Generator_ColumnPropNameInRow="VergiNo" msprop:Generator_ColumnPropNameInTable="VergiNoColumn" msprop:Generator_UserColumnName="VergiNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VergiDairesi" msprop:Generator_ColumnVarNameInTable="columnVergiDairesi" msprop:Generator_ColumnPropNameInRow="VergiDairesi" msprop:Generator_ColumnPropNameInTable="VergiDairesiColumn" msprop:Generator_UserColumnName="VergiDairesi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adres" msprop:Generator_ColumnVarNameInTable="columnAdres" msprop:Generator_ColumnPropNameInRow="Adres" msprop:Generator_ColumnPropNameInTable="AdresColumn" msprop:Generator_UserColumnName="Adres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefon" msprop:Generator_ColumnVarNameInTable="columnTelefon" msprop:Generator_ColumnPropNameInRow="Telefon" msprop:Generator_ColumnPropNameInTable="TelefonColumn" msprop:Generator_UserColumnName="Telefon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FaturaID" msprop:Generator_ColumnVarNameInTable="columnFaturaID" msprop:Generator_ColumnPropNameInRow="FaturaID" msprop:Generator_ColumnPropNameInTable="FaturaIDColumn" msprop:Generator_UserColumnName="FaturaID" type="xs:int" />
+              <xs:element name="FaturaTarihi" msprop:Generator_ColumnVarNameInTable="columnFaturaTarihi" msprop:Generator_ColumnPropNameInRow="FaturaTarihi" msprop:Generator_ColumnPropNameInTable="FaturaTarihiColumn" msprop:Generator_UserColumnName="FaturaTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FaturaNo" msprop:Generator_ColumnVarNameInTable="columnFaturaNo" msprop:Generator_ColumnPropNameInRow="FaturaNo" msprop:Generator_ColumnPropNameInTable="FaturaNoColumn" msprop:Generator_UserColumnName="FaturaNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AraToplam" msprop:Generator_ColumnVarNameInTable="columnAraToplam" msprop:Generator_ColumnPropNameInRow="AraToplam" msprop:Generator_ColumnPropNameInTable="AraToplamColumn" msprop:Generator_UserColumnName="AraToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GenelToplam" msprop:Generator_ColumnVarNameInTable="columnGenelToplam" msprop:Generator_ColumnPropNameInRow="GenelToplam" msprop:Generator_ColumnPropNameInTable="GenelToplamColumn" msprop:Generator_UserColumnName="GenelToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvToplam" msprop:Generator_ColumnVarNameInTable="columnKdvToplam" msprop:Generator_ColumnPropNameInRow="KdvToplam" msprop:Generator_ColumnPropNameInTable="KdvToplamColumn" msprop:Generator_UserColumnName="KdvToplam" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HareketID" msprop:Generator_ColumnVarNameInTable="columnHareketID" msprop:Generator_ColumnPropNameInRow="HareketID" msprop:Generator_ColumnPropNameInTable="HareketIDColumn" msprop:Generator_UserColumnName="HareketID" type="xs:int" />
+              <xs:element name="BirimAdi" msprop:Generator_ColumnVarNameInTable="columnBirimAdi" msprop:Generator_ColumnPropNameInRow="BirimAdi" msprop:Generator_ColumnPropNameInTable="BirimAdiColumn" msprop:Generator_UserColumnName="BirimAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BirimID" msprop:Generator_ColumnVarNameInTable="columnBirimID" msprop:Generator_ColumnPropNameInRow="BirimID" msprop:Generator_ColumnPropNameInTable="BirimIDColumn" msprop:Generator_UserColumnName="BirimID" type="xs:int" />
+              <xs:element name="StokKod" msprop:Generator_ColumnVarNameInTable="columnStokKod" msprop:Generator_ColumnPropNameInRow="StokKod" msprop:Generator_ColumnPropNameInTable="StokKodColumn" msprop:Generator_UserColumnName="StokKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Barkod" msprop:Generator_ColumnVarNameInTable="columnBarkod" msprop:Generator_ColumnPropNameInRow="Barkod" msprop:Generator_ColumnPropNameInTable="BarkodColumn" msprop:Generator_UserColumnName="Barkod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fiyat" msprop:Generator_ColumnVarNameInTable="columnFiyat" msprop:Generator_ColumnPropNameInRow="Fiyat" msprop:Generator_ColumnPropNameInTable="FiyatColumn" msprop:Generator_UserColumnName="Fiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tutar" msprop:Generator_ColumnVarNameInTable="columnTutar" msprop:Generator_ColumnPropNameInRow="Tutar" msprop:Generator_ColumnPropNameInTable="TutarColumn" msprop:Generator_UserColumnName="Tutar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvOrani" msprop:Generator_ColumnVarNameInTable="columnKdvOrani" msprop:Generator_ColumnPropNameInRow="KdvOrani" msprop:Generator_ColumnPropNameInTable="KdvOraniColumn" msprop:Generator_UserColumnName="KdvOrani" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Miktar" msprop:Generator_ColumnVarNameInTable="columnMiktar" msprop:Generator_ColumnPropNameInRow="Miktar" msprop:Generator_ColumnPropNameInTable="MiktarColumn" msprop:Generator_UserColumnName="Miktar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KdvTutari" msprop:Generator_ColumnVarNameInTable="columnKdvTutari" msprop:Generator_ColumnPropNameInRow="KdvTutari" msprop:Generator_ColumnPropNameInTable="KdvTutariColumn" msprop:Generator_UserColumnName="KdvTutari" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StokID" msprop:Generator_ColumnVarNameInTable="columnStokID" msprop:Generator_ColumnPropNameInRow="StokID" msprop:Generator_ColumnPropNameInTable="StokIDColumn" msprop:Generator_UserColumnName="StokID" type="xs:int" />
+              <xs:element name="StokAdi" msprop:Generator_ColumnVarNameInTable="columnStokAdi" msprop:Generator_ColumnPropNameInRow="StokAdi" msprop:Generator_ColumnPropNameInTable="StokAdiColumn" msprop:Generator_UserColumnName="StokAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblBirim" />
+      <xs:field xpath="mstns:BirimID" />
+    </xs:unique>
+    <xs:unique name="tblStokHareket_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblStokHareket" />
+      <xs:field xpath="mstns:HareketID" />
+    </xs:unique>
+    <xs:unique name="tblCariHesaplar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblCariHesaplar" />
+      <xs:field xpath="mstns:CariID" />
+    </xs:unique>
+    <xs:unique name="tblFatura_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblFatura" />
+      <xs:field xpath="mstns:FaturaID" />
+    </xs:unique>
+    <xs:unique name="tblKullanici_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblKullanici" />
+      <xs:field xpath="mstns:KullaniciID" />
+    </xs:unique>
+    <xs:unique name="tblStok_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblStok" />
+      <xs:field xpath="mstns:StokID" />
+    </xs:unique>
+    <xs:unique name="View_Print_Fatura_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Print_Fatura" />
+      <xs:field xpath="mstns:FaturaID" />
+    </xs:unique>
+    <xs:unique name="View_Fatura_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Fatura" />
+      <xs:field xpath="mstns:CariID" />
+      <xs:field xpath="mstns:FaturaID" />
+      <xs:field xpath="mstns:HareketID" />
+      <xs:field xpath="mstns:BirimID" />
+      <xs:field xpath="mstns:StokID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
